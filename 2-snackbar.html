@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNACKBAR</title>
+    <script type="module" crossorigin src="/HW_-10/assets/styles-DD3qoKza.js"></script>
     <link rel="stylesheet" crossorigin href="/HW_-10/assets/styles-DvPDDfy5.css">
   </head>
   <body>
-   
-
-    <main>
-      <h1>SNACKBAR</h1>
-    </main>
-
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
     
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+    
+      <button type="submit">Create notification</button>
+    </form>      
   </body>
 </html>
